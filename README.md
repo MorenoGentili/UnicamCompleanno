@@ -12,3 +12,4 @@ Applicazione console C# che calcola l'età dell'utente e gli indica i giorni che
 Il programma ha dei problemi e non è ancora stato ancora rilasciato al cliente. Al momento, non si riesce neanche a compilare il sorgente (premendo il tasto F5, Visual Studio Code dice che sono stati rilevati errori).
 Per prima cosa va risolto quello, e poi anche un altro problema: per alcune date di nascita, il programma scrive "Restano -80 giorni al tuo prossimo compleanno!".
 Come è possibile che scriva un numero negativo? Va identificato il problema e risolto. Hai giusto notato che si verifica per i nati a gennaio, febbraio e alcuni di marzo.
+Fai il possibile per consegnare il programma funzionante al cliente.
