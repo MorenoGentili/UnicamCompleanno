@@ -18,14 +18,40 @@ namespace UnicamCompleanno
                 //.NET non ha un modo facile per ottenere la differenza in anni
                 //andiamo a vedere su StackOverlow se qualcuno ha già avuto la stessa necessità
                 //Il metodo Years è stato preso da lì (è definito più in basso, in questo file)
-                string anniDiDifferenza = Years(dataDiNascita, DateTime.Today);
-                Console.WriteLine($"Oggi hai {anniDiDifferenza} anni");
+                
+                
+                
+                
+                     int anniDiDifferenza = Years(dataDiNascita, DateTime.Today);
+                
 
-                //Ora calcoliamo i giorni che ci separano dal prossimo compleanno
-                DateTime dataProssimoCompleanno = new DateTime(DateTime.Today.Year, dataDiNascita.Month, dataDiNascita.Day);
-                TimeSpan differenzaTemporale = dataProssimoCompleanno - DateTime.Today;
-                double differenzaInGiorni = differenzaTemporale.TotalDays;
-                Console.WriteLine($"Restano {differenzaInGiorni} giorni al tuo prossimo compleanno!");
+                    //Ora calcoliamo i giorni che ci separano dal prossimo compleanno
+                     DateTime dataProssimoCompleanno = new DateTime(DateTime.Today.Year, dataDiNascita.Month, dataDiNascita.Day);
+                    TimeSpan differenzaTemporale = dataProssimoCompleanno - DateTime.Today;
+                    double differenzaInGiorni = differenzaTemporale.TotalDays;
+                    
+                if (differenzaInGiorni>0)
+                {
+                    Console.WriteLine($"Oggi hai {anniDiDifferenza} anni");
+                    Console.WriteLine($"Restano {differenzaInGiorni} giorni al tuo prossimo compleanno!");
+                    
+                }
+                else
+                {
+                if (differenzaInGiorni==0){
+                     Console.WriteLine("Tanti Auguri!");
+                }
+                else
+                {
+                
+                    decimal giorni = (decimal) differenzaInGiorni;
+                    giorni += 365;
+                    Console.WriteLine($"Oggi hai {anniDiDifferenza} anni");
+                    Console.WriteLine($"Restano {giorni} giorni al tuo prossimo compleanno!");
+                    
+                }
+                }
+                
 
             } catch (Exception exc) {
                 Console.WriteLine($"Non hai digitato una data valida, il programma ora terminera'. L'errore e' stato: {exc.Message}.");
