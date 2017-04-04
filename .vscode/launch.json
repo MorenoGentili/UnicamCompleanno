@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}\\bin\\Debug\\netcoreapp1.1\\UnicamCompleanno.dll",
+            "program": "${workspaceRoot}/bin/Debug/netcoreapp1.1/UnicamCompleanno.dll",
             "args": [],
             "cwd": "${workspaceRoot}",
             "console": "externalTerminal",
